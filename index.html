@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IRR ADVERIGO 2.0</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="irr.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+  </head>
+
+  <body>
+    <div id="advertCreate">
+      <div class="captcha-block captcha-block-RU">
+        <div class="captcha-frame">
+          <div class="internal-captcha">
+            <h2>Заглушка для картинки капчи</h2>
+          </div>
+          
+          <div class="adverigo-captcha">
+            <div id="adverigo-wrapper" class="rp_captcha_img">
+              <!-- <img src="http://js.adverigo.com/img/sc/qfLcOa1od52kp_3sCb0dqaRtd6j9nylr/546b0cf11d3559728b000001.png?template=irr&amp;1440142890676" width="215" height="88"> -->
+            </div>
+
+            <script type="text/javascript">
+              initCaptcha();
+            </script>
+          </div>
+        </div>
+
+        <div class="enter_code">
+          <span style="display: none">Код с изображения</span>
+            <span>Введите ответ</span>
+            <br>
+          <input tabindex="8" type="text" class="field field8 field_code" id="f_captcha" name="captcha" value="" autocomplete="off">
+          <input type="hidden" name="captcha_block" value="submission_1048766781">
+          <a href="#" class="recaptcha recaptcha-adcreate adverigo" title="Обновить"></a>
+        </div>
+          
+        <input type="submit" id="next_link" value="Далее" class="btn btnSubmit">
+      </div>
+    </div>
+  </body>
+</html>
